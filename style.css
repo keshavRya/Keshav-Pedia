@@ -1,0 +1,347 @@
+
+#banner{
+    height: 100vh;
+    background: url("./images/wide-banner.jpg") center/cover;
+    display: grid;
+    grid-template: repeat(12, 1fr)/ repeat(12, 1fr);
+    gap: 10px;
+    
+}
+
+
+#banner h1{
+    font-family: "georgia", sans-serif;
+    font-weight: bolder;
+    color: #187f7f;
+    font-size: 3.9rem;
+    grid-area: 5/5/7/12;
+
+}
+
+
+
+#banner h2{
+    color: #187f7f;
+    grid-area: 8/5/9/12;
+      font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+#banner span{
+    text-decoration: underline;
+}
+
+
+
+
+
+#portfolio, .album{
+    background-color: blanchedalmond;
+}
+
+#portfolio h2{
+      font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: large;
+  padding-bottom: 20px;
+}
+
+#portfolio .card-body{
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    
+}
+.card-text{
+      font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+
+}
+
+.btn-primary{
+    color: white;
+    font-size: large;
+    border: none;
+    width: 100%;
+    align-items: end;
+    
+}
+.card-img-top{
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid grey;
+}
+.port-btn{
+    
+    border: none;
+    width: 100%;
+    
+}
+.btn-group{
+    width: 100%;
+}
+
+.card{
+    height: 100%;
+}
+
+
+
+
+
+
+#gallery .row{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 10px;
+    padding: 10%;
+    padding-top: 5%;
+    
+
+}
+
+#gallery .row > img{
+    box-shadow: 3px 3px 5px  grey;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+img[alt="ganga aarti evening"]{
+    grid-area: 1/1/4/ 4;
+    padding: 0;
+    object-position: bottom;
+}
+
+
+img[alt="cars"]{
+    grid-area: 1/4/4/ -1;
+    padding: 0;
+    
+}
+
+
+img[alt="madhosingh"]{
+    grid-area: 4/1/-1/ 4;
+    padding: 0;
+    
+}
+
+
+img[alt="rajdari"]{
+    grid-area: 7/4/-1/-1;
+    padding: 0;
+    object-position: right;
+    
+}
+
+
+img[alt="ganga aarti morning"]{
+    grid-area: 4/7/7/ 10;
+    padding: 0;
+;
+    
+}
+
+
+img[alt="laapata"]{
+    grid-area: 5/4/7/ 7;
+    padding: 0;
+    
+}
+
+#gallery p{
+    grid-area: 4/4/5/7;
+    margin: 0px;
+    text-align: center;
+    padding:0%;
+    font-size: 2em;
+    backdrop-filter: blur(10px);
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-self: center;
+}
+
+#gallery p.quote{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 30px;
+}
+
+#gallery .card{
+    margin: 0;
+    color: whitesmoke
+}
+
+.blockquote{
+    text-align: left;
+}
+
+
+#gallery{
+    background-color: blanchedalmond;
+}
+
+
+
+    #gallery h2{
+        padding-top: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+    .bottom-container{
+    background-color: #215E61;
+    padding: 50px 0 20px;  
+    color: whitesmoke;
+    margin: 0;
+    text-align: center;
+    font-family: "Montserrat";
+    }
+
+
+    .links a{
+        text-decoration: none;
+        color: whitesmoke;
+        margin: 20px;
+        font-family: "Montserrat";
+
+    }
+
+
+
+@media (576px<=width<=920px){
+
+    /* .row.row-cols-1.row-cols-sm-2.g-3{
+        display: flex;
+        flex-flow: column;
+    }
+
+    #portfolio col{
+        width: 100%;
+    } */
+
+        #banner{
+        height: 50vh;
+        background: url("./images/wide-banner.jpg") center/cover;
+    }
+
+    #gallery .row{
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        padding: 10%;
+        justify-content: center;
+        align-items: center;   
+
+    }
+
+    #gallery img{
+
+        flex: 1 1 0;
+        max-height: 300px;;
+    }
+
+    #gallery p{
+        flex: 1 1 auto;
+        font-size: 2rem;
+    }
+
+
+
+    #banner h1{
+    
+    font-size: 2.0rem;
+    grid-area: 5/6/7/12;
+
+    }
+
+
+
+    #banner h2{
+        color: #187f7f;
+        grid-area: 9/6/10/12;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (width<576px){
+
+            #banner{
+        height: 25vh;
+        background: url("./images/wide-banner.jpg") center/cover no-repeat;
+    }
+
+
+        #gallery .row{
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        padding: 10%;
+        padding-top: 0%;
+        justify-content: center;
+        align-items: center;   
+
+    }
+
+    #gallery img{
+
+        flex: 1 1 0;
+        max-height: 200px;
+    }
+
+    #gallery p{
+        flex: 1 1 auto;
+        font-size: 2rem;
+    }
+
+
+
+    #banner h1{
+    font-family: "georgia", sans-serif;
+    font-weight: bolder;
+    color: #187f7f;
+    font-size: 13pt;
+    grid-area: 5/6/7/12;
+
+}
+
+
+
+    #banner h2{
+        color: #187f7f;
+        font-size: 14pt;
+        grid-area: 9/6/9/12;
+    }
+
+}
+
+
+
+
+
+
